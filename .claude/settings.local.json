@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /home/murilo/projeto_llm/credito-agentes-banco-poneiu/src/credito_agentes/data)",
+      "Bash(pip3 install *)",
+      "Bash(USE_FAKE_LLM=1 .venv/bin/pytest -q)"
+    ],
+    "additionalDirectories": [
+      "/home/murilo/projeto_llm/credito-agentes-banco-poneiu/src/credito_agentes"
+    ]
+  }
+}

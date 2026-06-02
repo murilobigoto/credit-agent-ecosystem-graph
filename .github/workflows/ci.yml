@@ -1,0 +1,46 @@
+name: CI
+
+# CI: roda lint, validação de prompts e testes a cada push e pull request.
+# Tudo offline (USE_FAKE_LLM=1) — reprodutível e sem credenciais.
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+env:
+  USE_FAKE_LLM: "1"
+
+jobs:
+  qualidade:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,real]"
+
+      - name: Lint (ruff)
+        run: ruff check src tests
+
+      - name: Validação de prompts
+        run: python scripts/validate_prompts.py
+
+      - name: Testes (pytest)
+        run: pytest -q
+
+      - name: Relatório de avaliação
+        run: python -m credito_agentes.observability.evaluation

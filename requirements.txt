@@ -1,0 +1,5 @@
+# Dependencias de runtime. Para dev/real, use os extras do pyproject:
+#   pip install -e ".[dev]"     # pytest, pytest-cov, ruff
+#   pip install -e ".[real]"    # anthropic, langgraph, opentelemetry
+pydantic>=2.5
+python-dotenv>=1.0
