@@ -256,7 +256,3 @@ Filtro de vigencia garante que politicas revogadas nunca sejam citadas.
 4. Adicione casos no golden set (`tests/golden/`) e rode `pytest`.
 
 ---
-
-## Licenca
-
-MIT - veja LICENSE.
