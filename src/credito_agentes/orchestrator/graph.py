@@ -1,8 +1,8 @@
 """
-Grafo de Agentes (o fluxo determinístico que conecta tudo).
+Grafo de Agentes
 ==================================================================
 
-PADRÃO ARQUITETURAL (explicação a nível de aula)
+PADRÃO ARQUITETURAL
 ------------------------------------------------
 Implementamos um grafo determinístico no estilo Supervisor + Workers. Cada nó é
 uma função que recebe o GraphState e devolve um GraphState atualizado. As
@@ -11,7 +11,7 @@ RoutingDecision — nunca por improviso do LLM.
 
 POR QUE NÃO USAR LANGGRAPH DIRETAMENTE AQUI?
 --------------------------------------------
-O requisito cita LangGraph/Semantic Kernel como opções. Para manter o núcleo
+2cita-se LangGraph/Semantic Kernel como opções. Para manter o núcleo
 SIMPLES, testável e sem dependência pesada, implementamos um mini-grafo próprio
 com a MESMA semântica (nós + transições determinísticas + retry/timeout nas
 tools). O arquivo `graph_langgraph.py` (opcional) mostra como portar este mesmo

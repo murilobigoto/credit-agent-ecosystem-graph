@@ -2,7 +2,7 @@
 Contratos de dados do ecossistema (a "linguagem comum" entre agentes).
 ==========================================================================
 
-POR QUE ESTE ARQUIVO EXISTE (explicação a nível de aula)
+POR QUE ESTE ARQUIVO EXISTE
 ---------------------------------------------------------
 Em um sistema multi-agente, cada agente é uma caixa-preta que recebe algo e
 devolve algo. Se cada agente inventar seu próprio formato de entrada/saída, o

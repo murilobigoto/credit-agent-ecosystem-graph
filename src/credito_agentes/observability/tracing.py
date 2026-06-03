@@ -2,7 +2,7 @@
 Observabilidade: tracing de turno com IDs de correlação.
 ==================================================================
 
-POR QUE OBSERVABILIDADE (explicação a nível de aula)
+POR QUE OBSERVABILIDADE 
 ----------------------------------------------------
 Quando algo dá errado em produção — uma decisão estranha, uma latência alta —
 você precisa reconstruir EXATAMENTE o que aconteceu. Observabilidade é a

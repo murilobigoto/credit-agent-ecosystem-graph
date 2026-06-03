@@ -2,7 +2,7 @@
 Roteador de Entrada (o "Supervisor" do padrão Supervisor + Workers).
 ==================================================================
 
-PAPEL (explicação a nível de aula)
+PAPEL
 ----------------------------------
 O roteador é a porta de entrada. Ele:
   1. Roda os guardrails de entrada (PII, injection, jailbreak).

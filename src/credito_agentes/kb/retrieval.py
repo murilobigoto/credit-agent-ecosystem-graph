@@ -2,7 +2,7 @@
 Base de Conhecimento (KB) com RAG.
 ==================================================================
 
-O QUE É RAG (explicação a nível de aula)
+O QUE É RAG
 ----------------------------------------
 RAG = Retrieval-Augmented Generation (Geração Aumentada por Recuperação).
 Um LLM sozinho "sabe" apenas o que viu no treino e pode alucinar. Em RAG, antes
