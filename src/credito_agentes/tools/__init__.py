@@ -2,8 +2,8 @@
 
 from credito_agentes.tools.banking_tools import (
     READ_ONLY_BANKING_TOOLS,
-    ContratosOutput,
     ContratoOutput,
+    ContratosOutput,
     PerfilClienteOutput,
     RiscoConcessaoOutput,
     RiscoRenegOutput,

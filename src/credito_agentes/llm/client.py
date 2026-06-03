@@ -139,7 +139,7 @@ class RealLLM(LLMClient):
             raise RuntimeError(
                 "ANTHROPIC_API_KEY nao configurada. "
                 "Defina no arquivo .env ou como variavel de ambiente."
-            )
+            ) from None
         except ImportError as exc:
             raise RuntimeError(
                 "SDK anthropic nao instalado. Execute: pip install anthropic"
